@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://lourvix-es-pronombres-pv.vercel.app/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lourvix-es-pronombres-pv.vercel.app/assets/images/og-lourvix-espanol.jpg</image:loc>
+      <image:title>Lourvix · Pronombres en Español</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://lourvix-es-pronombres-pv.vercel.app/#circuito</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lourvix-es-pronombres-pv.vercel.app/#memoria</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://lourvix-es-pronombres-pv.vercel.app/#atencion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lourvix-es-pronombres-pv.vercel.app/#oido</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lourvix-es-pronombres-pv.vercel.app/#pluma</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://lourvix-es-pronombres-pv.vercel.app/#feedback</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

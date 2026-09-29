@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Política de Protección de Datos (LGPD) · Lourvix</title>
+<meta name="description" content="Política de Protección de Datos de Lourvix conforme a la Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018)." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#111110" />
+<link rel="canonical" href="https://lourvix-es-pronombres-pv.vercel.app/politica-privacidade.html" />
+
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:title" content="Política de Protección de Datos (LGPD) · Lourvix" />
+<meta property="og:description" content="Cómo Lourvix recopila, usa y protege tus datos personales conforme a la LGPD." />
+<meta property="og:url" content="https://lourvix-es-pronombres-pv.vercel.app/politica-privacidade.html" />
+<meta property="og:site_name" content="Lourvix · Español en Acción" />
+
+<link rel="icon" href="/icon-192.avif" type="image/avif" />
+<link rel="icon" href="/icon-192.png" type="image/png" />
+<link rel="apple-touch-icon" href="/icon-192.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --copper:      #B7794A;
+  --copper-hi:   #D89A6A;
+  --obsidian:    #111110;
+  --obsidian-2:  #1C1B18;
+  --olive:       #4C5146;
+  --ivory:       #F3F0E8;
+  --ivory-2:     #E8E4D8;
+  --stone:       #A69C6C;
+  --bronze:      #6B4423;
+  --line-2:      rgba(17, 17, 16, .08);
+  --text:        #1A1916;
+  --text-mute:   #5B584F;
+  --text-ivory:  #F3F0E8;
+  --ff-display:  'Montserrat', system-ui, sans-serif;
+  --ff-text:     'Inter', system-ui, sans-serif;
+  --max:         900px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--ff-text);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--copper); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--copper-hi); text-decoration: underline; }
+h1, h2, h3, h4 { font-family: var(--ff-display); font-weight: 800; letter-spacing: -.02em; margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(17, 17, 16, .92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(183, 121, 74, .22);
+  padding: 14px 0;
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-ivory);
+  font-family: var(--ff-display);
+  font-weight: 800;
+  letter-spacing: .04em;
+  font-size: 1rem;
+}
+.brand-mark {
+  width: 32px; height: 32px;
+  display: grid; place-items: center;
+  border: 1.5px solid var(--copper);
+  border-radius: 8px;
+  color: var(--copper);
+  font-weight: 800;
+  font-size: .78rem;
+  background: rgba(183, 121, 74, .08);
+}
+.brand-txt small {
+  display: block;
+  font-family: var(--ff-text);
+  font-weight: 500;
+  font-size: .65rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(243, 240, 232, .55);
+  margin-top: 2px;
+}
+.back-link {
+  color: rgba(243, 240, 232, .7);
+  font-size: .85rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(243, 240, 232, .18);
+  transition: all .2s ease;
+}
+.back-link:hover {
+  color: var(--text-ivory);
+  background: rgba(243, 240, 232, .06);
+  border-color: rgba(243, 240, 232, .35);
+  text-decoration: none;
+}
+
+.doc-hero {
+  background: var(--obsidian);
+  color: var(--text-ivory);
+  padding: 80px 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+.doc-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(183, 121, 74, .18), transparent 65%);
+  filter: blur(40px);
+  top: -200px; right: -150px;
+  pointer-events: none;
+}
+.doc-hero-inner { position: relative; z-index: 2; }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--ff-display);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--copper-hi);
+  margin-bottom: 22px;
+}
+.eyebrow::before {
+  content: "";
+  width: 24px; height: 1px;
+  background: var(--copper-hi);
+}
+.doc-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -.03em;
+  margin-bottom: 20px;
+}
+.doc-hero p {
+  font-size: 1.05rem;
+  color: rgba(243, 240, 232, .72);
+  max-width: 620px;
+  margin: 0;
+}
+.doc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(243, 240, 232, .1);
+}
+.doc-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.doc-meta-item strong {
+  font-family: var(--ff-display);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+.doc-meta-item span {
+  font-size: .95rem;
+  color: rgba(243, 240, 232, .85);
+}
+
+.doc-content {
+  padding: 70px 0 100px;
+}
+.doc-toc {
+  background: #FBFAF5;
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--copper);
+  border-radius: 0 14px 14px 0;
+  padding: 26px 30px;
+  margin-bottom: 60px;
+}
+.doc-toc h3 {
+  font-size: .78rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+.doc-toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: toc;
+}
+.doc-toc li {
+  counter-increment: toc;
+  margin-bottom: 8px;
+}
+.doc-toc li::before {
+  content: counter(toc, decimal-leading-zero) " · ";
+  font-family: var(--ff-display);
+  font-weight: 800;
+  color: var(--copper);
+  font-size: .82rem;
+  letter-spacing: .08em;
+}
+.doc-toc a {
+  font-weight: 600;
+  font-size: .92rem;
+  color: var(--text);
+}
+.doc-toc a:hover { color: var(--copper); }
+
+.doc-section {
+  margin-bottom: 54px;
+  scroll-margin-top: 90px;
+}
+.doc-section h2 {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  color: var(--obsidian);
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-2);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.doc-section h2 .num {
+  font-family: var(--ff-display);
+  font-size: .82rem;
+  font-weight: 800;
+  color: var(--copper);
+  letter-spacing: .12em;
+  flex-shrink: 0;
+}
+.doc-section h3 {
+  font-size: 1.05rem;
+  color: var(--bronze);
+  margin: 28px 0 12px;
+  font-weight: 800;
+}
+.doc-section p {
+  margin: 0 0 16px;
+  color: var(--text);
+}
+.doc-section ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 20px;
+}
+.doc-section ul li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+  color: var(--text);
+  line-height: 1.65;
+}
+.doc-section ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .65em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--copper);
+}
+.doc-section strong { font-weight: 800; color: var(--obsidian); }
+.doc-section a { font-weight: 600; }
+
+.highlight-box {
+  background: rgba(183, 121, 74, .08);
+  border-left: 3px solid var(--copper);
+  border-radius: 0 12px 12px 0;
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-size: .96rem;
+  color: var(--text);
+}
+.highlight-box strong { color: var(--copper); }
+
+.doc-footer {
+  background: var(--obsidian);
+  color: rgba(243, 240, 232, .6);
+  padding: 40px 0;
+  border-top: 1px solid rgba(243, 240, 232, .08);
+}
+.doc-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .85rem;
+}
+.doc-footer a {
+  color: var(--copper-hi);
+}
+.doc-footer a:hover { color: var(--copper); text-decoration: none; }
+.doc-footer nav { display: flex; gap: 22px; flex-wrap: wrap; }
+
+@media (max-width: 620px) {
+  .doc-hero { padding: 60px 0 50px; }
+  .doc-content { padding: 50px 0 70px; }
+  .doc-meta { gap: 22px; }
+  .doc-toc { padding: 20px 22px; }
+  .doc-footer-inner { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="/" class="brand" aria-label="Lourvix — inicio">
+      <span class="brand-mark">LX</span>
+      <span class="brand-txt">
+        LOURVIX
+        <small>Desbloqueando el Español</small>
+      </span>
+    </a>
+    <a href="/" class="back-link">← Volver al inicio</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="doc-hero">
+    <div class="container doc-hero-inner">
+      <span class="eyebrow">Documento legal · LGPD</span>
+      <h1>Política de Protección de Datos</h1>
+      <p>
+        Esta política describe cómo <strong style="color: var(--copper-hi);">Lourvix</strong> recopila,
+        utiliza, almacena y protege los datos personales de las personas usuarias de esta plataforma
+        educativa, en conformidad con la <strong style="color: var(--copper-hi);">Lei Geral de Proteção
+        de Dados (LGPD — Lei nº 13.709/2018)</strong> de Brasil.
+      </p>
+
+      <div class="doc-meta">
+        <div class="doc-meta-item">
+          <strong>Última actualización</strong>
+          <span>15 de enero de 2025</span>
+        </div>
+        <div class="doc-meta-item">
+          <strong>Versión</strong>
+          <span>1.0</span>
+        </div>
+        <div class="doc-meta-item">
+          <strong>Idioma</strong>
+          <span>Español</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc-content">
+    <div class="container">
+
+      <nav class="doc-toc" aria-label="Índice">
+        <h3>Índice de contenidos</h3>
+        <ol>
+          <li><a href="#responsable">Responsable del tratamiento</a></li>
+          <li><a href="#datos">Datos que recopilamos</a></li>
+          <li><a href="#finalidades">Finalidades del tratamiento</a></li>
+          <li><a href="#base-legal">Base legal del tratamiento</a></li>
+          <li><a href="#comparticion">Compartición con terceros</a></li>
+          <li><a href="#cookies">Cookies y tecnologías similares</a></li>
+          <li><a href="#derechos">Derechos del titular</a></li>
+          <li><a href="#seguridad">Seguridad de los datos</a></li>
+          <li><a href="#retencion">Plazo de conservación</a></li>
+          <li><a href="#internacional">Transferencia internacional</a></li>
+          <li><a href="#menores">Datos de menores</a></li>
+          <li><a href="#actualizaciones">Actualizaciones de esta política</a></li>
+          <li><a href="#contacto">Cómo contactarnos</a></li>
+        </ol>
+      </nav>
+
+      <section class="doc-section" id="responsable">
+        <h2><span class="num">01</span> Responsable del tratamiento</h2>
+        <p>
+          El responsable del tratamiento de datos personales recopilados a través de esta
+          plataforma es <strong>Lourvix · Boutique de Ingeniería Web</strong>, con domicilio
+          digital en <strong>lourvix-es-pronombres-pv.vercel.app</strong>, en adelante
+          referida como "Lourvix", "nosotros" o "la plataforma".
+        </p>
+        <p>
+          El contacto oficial para cuestiones relacionadas con protección de datos y ejercicio
+          de derechos LGPD es:
+        </p>
+        <div class="highlight-box">
+          <strong>📱 WhatsApp:</strong> <a href="https://wa.me/5584991920773" target="_blank" rel="noopener">+55 (84) 99192-0773</a>
+        </div>
+      </section>
+
+      <section class="doc-section" id="datos">
+        <h2><span class="num">02</span> Datos que recopilamos</h2>
+        <p>
+          Lourvix respeta tu privacidad por principio. Esta plataforma es una landing page
+          educativa y <strong>no recopila datos personales de forma automática sin tu consentimiento expreso</strong>.
+        </p>
+
+        <h3>2.1 Datos que puedes proporcionarnos voluntariamente</h3>
+        <ul>
+          <li><strong>Nombre y apellido</strong> — cuando decides contactarnos vía WhatsApp o correo electrónico.</li>
+          <li><strong>Número de teléfono</strong> — cuando inicias una conversación por WhatsApp.</li>
+          <li><strong>Dirección de correo electrónico</strong> — cuando nos escribes directamente.</li>
+          <li><strong>Contenido de los mensajes</strong> — cualquier información que decidas compartir en nuestra comunicación.</li>
+        </ul>
+
+        <h3>2.2 Datos técnicos recopilados automáticamente</h3>
+        <p>
+          Al acceder a la plataforma, nuestro proveedor de infraestructura
+          (<strong>Vercel Inc.</strong>) puede recopilar de forma anónima y agregada:
+        </p>
+        <ul>
+          <li>Dirección IP (anonimizada cuando sea posible).</li>
+          <li>Tipo y versión del navegador.</li>
+          <li>Sistema operativo y tipo de dispositivo.</li>
+          <li>Páginas visitadas y tiempo de permanencia.</li>
+          <li>País y región aproximada de acceso.</li>
+        </ul>
+        <p>
+          Estos datos técnicos <strong>no permiten identificarte personalmente</strong> y son
+          utilizados exclusivamente para métricas de rendimiento, seguridad y mejora de la experiencia.
+        </p>
+      </section>
+
+      <section class="doc-section" id="finalidades">
+        <h2><span class="num">03</span> Finalidades del tratamiento</h2>
+        <p>Los datos recopilados son tratados exclusivamente para las siguientes finalidades:</p>
+        <ul>
+          <li>Responder a tus consultas, dudas o solicitudes enviadas por WhatsApp o correo electrónico.</li>
+          <li>Agendar clases, mentorías o experiencias educativas personalizadas.</li>
+          <li>Enviar materiales, contenidos o informaciones pedagógicas solicitadas por ti.</li>
+          <li>Mejorar la plataforma, la experiencia de usuario y el contenido educativo.</li>
+          <li>Cumplir con obligaciones legales o regulatorias aplicables.</li>
+          <li>Prevenir fraudes, abusos o usos indebidos de la plataforma.</li>
+        </ul>
+        <div class="highlight-box">
+          <strong>Importante:</strong> Lourvix <strong>NO vende, alquila ni cede</strong> tus datos
+          personales a terceros con fines comerciales, publicitarios o de marketing ajeno a la plataforma.
+        </div>
+      </section>
+
+      <section class="doc-section" id="base-legal">
+        <h2><span class="num">04</span> Base legal del tratamiento</h2>
+        <p>
+          El tratamiento de datos personales realizado por Lourvix se fundamenta en las siguientes
+          bases legales previstas en el artículo 7 de la LGPD:
+        </p>
+        <ul>
+          <li><strong>Consentimiento del titular</strong> (art. 7, I) — cuando nos contactas voluntariamente.</li>
+          <li><strong>Ejecución de contrato</strong> (art. 7, V) — para prestación de servicios educativos contratados.</li>
+          <li><strong>Legítimo interés</strong> (art. 7, IX) — para mejoras de la plataforma y prevención de fraudes.</li>
+          <li><strong>Cumplimiento de obligación legal</strong> (art. 7, II) — cuando sea exigido por ley o autoridad competente.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section" id="comparticion">
+        <h2><span class="num">05</span> Compartición con terceros</h2>
+        <p>
+          Lourvix puede compartir datos exclusivamente con los siguientes proveedores de servicios
+          esenciales para la operación de la plataforma, todos con políticas de privacidad propias
+          y en conformidad con la LGPD:
+        </p>
+        <ul>
+          <li><strong>Vercel Inc.</strong> — proveedor de hosting e infraestructura (EE. UU.).</li>
+          <li><strong>Google Fonts</strong> — proveedor de tipografías web (EE. UU.).</li>
+          <li><strong>WhatsApp / Meta Platforms</strong> — canal de comunicación directa contigo.</li>
+        </ul>
+        <p>
+          Todos los proveedores están contractualmente obligados a mantener la confidencialidad,
+          seguridad y protección de los datos según estándares internacionales.
+        </p>
+      </section>
+
+      <section class="doc-section" id="cookies">
+        <h2><span class="num">06</span> Cookies y tecnologías similares</h2>
+        <p>
+          Esta plataforma <strong>utiliza cookies estrictamente necesarias</strong> para su
+          funcionamiento técnico. No utilizamos cookies de rastreo publicitario, redes sociales
+          de terceros ni sistemas de perfilado de comportamiento.
+        </p>
+        <p>
+          Puedes configurar tu navegador para bloquear o eliminar cookies en cualquier momento,
+          aunque esto puede afectar algunas funcionalidades interactivas.
+        </p>
+      </section>
+
+      <section class="doc-section" id="derechos">
+        <h2><span class="num">07</span> Derechos del titular</h2>
+        <p>
+          En conformidad con el artículo 18 de la LGPD, tienes derecho a solicitar, en cualquier momento:
+        </p>
+        <ul>
+          <li><strong>Confirmación</strong> de la existencia de tratamiento de tus datos.</li>
+          <li><strong>Acceso</strong> a los datos personales que tratamos sobre ti.</li>
+          <li><strong>Corrección</strong> de datos incompletos, inexactos o desactualizados.</li>
+          <li><strong>Anonimización, bloqueo o eliminación</strong> de datos innecesarios o excesivos.</li>
+          <li><strong>Portabilidad</strong> de los datos a otro proveedor de servicios.</li>
+          <li><strong>Eliminación</strong> de los datos tratados con base en consentimiento.</li>
+          <li><strong>Información</strong> sobre entidades con las que compartimos datos.</li>
+          <li><strong>Revocación</strong> del consentimiento en cualquier momento.</li>
+          <li><strong>Oposición</strong> al tratamiento realizado sin consentimiento.</li>
+        </ul>
+        <p>
+          Para ejercer cualquiera de estos derechos, contáctanos por WhatsApp
+          <a href="https://wa.me/5584991920773" target="_blank" rel="noopener">+55 (84) 99192-0773</a>
+          con el asunto <strong>"Solicitud LGPD"</strong>. Responderemos en un plazo máximo de
+          <strong>15 días hábiles</strong>.
+        </p>
+      </section>
+
+      <section class="doc-section" id="seguridad">
+        <h2><span class="num">08</span> Seguridad de los datos</h2>
+        <p>
+          Lourvix adopta medidas técnicas y administrativas apropiadas para proteger tus datos
+          personales contra accesos no autorizados, pérdida, alteración o destrucción, incluyendo:
+        </p>
+        <ul>
+          <li>Transmisión de datos mediante <strong>HTTPS/TLS 1.3</strong> con certificados válidos.</li>
+          <li>Infraestructura de hosting en <strong>Vercel Edge Network</strong> con protección DDoS.</li>
+          <li>Políticas de acceso restringido a datos personales.</li>
+          <li>Monitoreo continuo de seguridad y logs de acceso.</li>
+          <li>Actualización periódica de dependencias y librerías.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section" id="retencion">
+        <h2><span class="num">09</span> Plazo de conservación</h2>
+        <p>
+          Los datos personales son conservados apenas por el tiempo necesario para cumplir las
+          finalidades descritas en esta política, o conforme exigencias legales. En general:
+        </p>
+        <ul>
+          <li><strong>Mensajes de WhatsApp:</strong> conservados en tu dispositivo y en el de Lourvix durante el tiempo necesario para la prestación del servicio.</li>
+          <li><strong>Datos de contacto:</strong> eliminados a tu solicitud o después de 2 años de inactividad.</li>
+          <li><strong>Datos técnicos anonimizados:</strong> pueden conservarse por tiempo indeterminado para estadísticas agregadas.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section" id="internacional">
+        <h2><span class="num">10</span> Transferencia internacional</h2>
+        <p>
+          Algunos de nuestros proveedores (Vercel, Google Fonts) tienen sede en
+          <strong>Estados Unidos</strong>. La transferencia internacional de datos se realiza
+          en conformidad con el artículo 33 de la LGPD, bajo garantías contractuales que aseguran
+          un nivel adecuado de protección equivalente al previsto en la legislación brasileña.
+        </p>
+      </section>
+
+      <section class="doc-section" id="menores">
+        <h2><span class="num">11</span> Datos de menores</h2>
+        <p>
+          Esta plataforma está destinada a personas adultas (18 años o más). No recopilamos
+          intencionalmente datos de menores de edad. En caso de que identifiquemos que datos de
+          un menor fueron recopilados sin consentimiento de los responsables legales, procederemos
+          a su eliminación inmediata.
+        </p>
+      </section>
+
+      <section class="doc-section" id="actualizaciones">
+        <h2><span class="num">12</span> Actualizaciones de esta política</h2>
+        <p>
+          Esta Política de Protección de Datos puede ser actualizada periódicamente para reflejar
+          cambios en nuestras prácticas, en la legislación o por exigencias regulatorias.
+          La versión vigente será siempre publicada en esta página con la fecha de
+          <strong>última actualización</strong> visible al inicio del documento.
+        </p>
+        <p>
+          Recomendamos revisar esta política regularmente. El uso continuado de la plataforma
+          tras las actualizaciones constituye aceptación de los nuevos términos.
+        </p>
+      </section>
+
+      <section class="doc-section" id="contacto">
+        <h2><span class="num">13</span> Cómo contactarnos</h2>
+        <p>
+          Para cualquier duda, solicitud, reclamación o ejercicio de derechos relacionados con
+          esta Política de Protección de Datos, contáctanos:
+        </p>
+        <div class="highlight-box">
+          <strong>📱 WhatsApp:</strong> <a href="https://wa.me/5584991920773" target="_blank" rel="noopener">+55 (84) 99192-0773</a><br>
+          <strong>🌎 Plataforma:</strong> <a href="https://lourvix-es-pronombres-pv.vercel.app">lourvix-es-pronombres-pv.vercel.app</a><br>
+          <strong>⏱️ Plazo de respuesta:</strong> hasta 15 días hábiles
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="doc-footer">
+  <div class="container doc-footer-inner">
+    <p>© <span id="year"></span> Lourvix · Todos los derechos reservados.</p>
+    <nav aria-label="Documentos legales">
+      <a href="/politica-privacidade.html">Política de Protección de Datos</a>
+      <a href="/termos-uso.html">Términos de Uso</a>
+      <a href="https://wa.me/5584991920773" target="_blank" rel="noopener">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

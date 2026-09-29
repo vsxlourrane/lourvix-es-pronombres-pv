@@ -1,0 +1,16 @@
+﻿node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.env
+.env.local
+dist/
+build/.vercel
+*.tmp
+*.bak

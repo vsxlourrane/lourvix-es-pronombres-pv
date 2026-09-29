@@ -1,0 +1,17 @@
+/* TEAM */
+  Criador & Pedagogo: Lourvix
+  Contacto: WhatsApp +55 (84) 99192-0773
+  Sitio: https://lourvix-es-pronombres-pv.vercel.app/
+  Categoría: Educación · Idiomas · Español para brasileños
+
+/* SITE */
+  Última actualización: 2025-01-15
+  Idioma: Español / Portugués
+  Doctype: HTML5
+  Componentes: HTML, CSS, JavaScript Vanilla
+  Estándares: W3C · WCAG AA · Schema.org
+  Software: Vercel · GitHub · Google Fonts
+
+/* MÉTODO */
+  Inmersión activa · Memoria activa · Feedback 360°
+  Circuíto: Impulso Visual → Oído Atento → Pásame la Palabra → Pluma Dinámica

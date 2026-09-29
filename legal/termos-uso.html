@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Términos de Uso · Lourvix</title>
+<meta name="description" content="Términos y condiciones de uso de la plataforma educativa Lourvix · Pronombres en Español." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#111110" />
+<link rel="canonical" href="https://lourvix-es-pronombres-pv.vercel.app/termos-uso.html" />
+
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:title" content="Términos de Uso · Lourvix" />
+<meta property="og:description" content="Términos y condiciones de uso de la plataforma educativa Lourvix." />
+<meta property="og:url" content="https://lourvix-es-pronombres-pv.vercel.app/termos-uso.html" />
+<meta property="og:site_name" content="Lourvix · Español en Acción" />
+
+<link rel="icon" href="/icon-192.avif" type="image/avif" />
+<link rel="icon" href="/icon-192.png" type="image/png" />
+<link rel="apple-touch-icon" href="/icon-192.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --copper:      #B7794A;
+  --copper-hi:   #D89A6A;
+  --obsidian:    #111110;
+  --obsidian-2:  #1C1B18;
+  --olive:       #4C5146;
+  --ivory:       #F3F0E8;
+  --ivory-2:     #E8E4D8;
+  --stone:       #A69C6C;
+  --bronze:      #6B4423;
+  --line-2:      rgba(17, 17, 16, .08);
+  --text:        #1A1916;
+  --text-mute:   #5B584F;
+  --text-ivory:  #F3F0E8;
+  --ff-display:  'Montserrat', system-ui, sans-serif;
+  --ff-text:     'Inter', system-ui, sans-serif;
+  --max:         900px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--ff-text);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--copper); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--copper-hi); text-decoration: underline; }
+h1, h2, h3, h4 { font-family: var(--ff-display); font-weight: 800; letter-spacing: -.02em; margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(17, 17, 16, .92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(183, 121, 74, .22);
+  padding: 14px 0;
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-ivory);
+  font-family: var(--ff-display);
+  font-weight: 800;
+  letter-spacing: .04em;
+  font-size: 1rem;
+}
+.brand-mark {
+  width: 32px; height: 32px;
+  display: grid; place-items: center;
+  border: 1.5px solid var(--copper);
+  border-radius: 8px;
+  color: var(--copper);
+  font-weight: 800;
+  font-size: .78rem;
+  background: rgba(183, 121, 74, .08);
+}
+.brand-txt small {
+  display: block;
+  font-family: var(--ff-text);
+  font-weight: 500;
+  font-size: .65rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(243, 240, 232, .55);
+  margin-top: 2px;
+}
+.back-link {
+  color: rgba(243, 240, 232, .7);
+  font-size: .85rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(243, 240, 232, .18);
+  transition: all .2s ease;
+}
+.back-link:hover {
+  color: var(--text-ivory);
+  background: rgba(243, 240, 232, .06);
+  border-color: rgba(243, 240, 232, .35);
+  text-decoration: none;
+}
+
+.doc-hero {
+  background: var(--obsidian);
+  color: var(--text-ivory);
+  padding: 80px 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+.doc-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(183, 121, 74, .18), transparent 65%);
+  filter: blur(40px);
+  top: -200px; right: -150px;
+  pointer-events: none;
+}
+.doc-hero-inner { position: relative; z-index: 2; }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--ff-display);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--copper-hi);
+  margin-bottom: 22px;
+}
+.eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--copper-hi); }
+.doc-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -.03em;
+  margin-bottom: 20px;
+}
+.doc-hero p {
+  font-size: 1.05rem;
+  color: rgba(243, 240, 232, .72);
+  max-width: 620px;
+  margin: 0;
+}
+.doc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(243, 240, 232, .1);
+}
+.doc-meta-item { display: flex; flex-direction: column; gap: 4px; }
+.doc-meta-item strong {
+  font-family: var(--ff-display);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+.doc-meta-item span { font-size: .95rem; color: rgba(243, 240, 232, .85); }
+
+.doc-content { padding: 70px 0 100px; }
+.doc-toc {
+  background: #FBFAF5;
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--copper);
+  border-radius: 0 14px 14px 0;
+  padding: 26px 30px;
+  margin-bottom: 60px;
+}
+.doc-toc h3 {
+  font-size: .78rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+.doc-toc ol { list-style: none; padding: 0; margin: 0; counter-reset: toc; }
+.doc-toc li { counter-increment: toc; margin-bottom: 8px; }
+.doc-toc li::before {
+  content: counter(toc, decimal-leading-zero) " · ";
+  font-family: var(--ff-display);
+  font-weight: 800;
+  color: var(--copper);
+  font-size: .82rem;
+  letter-spacing: .08em;
+}
+.doc-toc a { font-weight: 600; font-size: .92rem; color: var(--text); }
+.doc-toc a:hover { color: var(--copper); }
+
+.doc-section { margin-bottom: 54px; scroll-margin-top: 90px; }
+.doc-section h2 {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  color: var(--obsidian);
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-2);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.doc-section h2 .num {
+  font-family: var(--ff-display);
+  font-size: .82rem;
+  font-weight: 800;
+  color: var(--copper);
+  letter-spacing: .12em;
+  flex-shrink: 0;
+}
+.doc-section h3 {
+  font-size: 1.05rem;
+  color: var(--bronze);
+  margin: 28px 0 12px;
+  font-weight: 800;
+}
+.doc-section p { margin: 0 0 16px; color: var(--text); }
+.doc-section ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 20px;
+}
+.doc-section ul li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+  color: var(--text);
+  line-height: 1.65;
+}
+.doc-section ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .65em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--copper);
+}
+.doc-section strong { font-weight: 800; color: var(--obsidian); }
+
+.highlight-box {
+  background: rgba(183, 121, 74, .08);
+  border-left: 3px solid var(--copper);
+  border-radius: 0 12px 12px 0;
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-size: .96rem;
+  color: var(--text);
+}
+.highlight-box strong { color: var(--copper); }
+
+.warning-box {
+  background: rgba(180, 74, 58, .07);
+  border-left: 3px solid #B44A3A;
+  border-radius: 0 12px 12px 0;
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-size: .96rem;
+  color: var(--text);
+}
+.warning-box strong { color: #B44A3A; }
+
+.doc-footer {
+  background: var(--obsidian);
+  color: rgba(243, 240, 232, .6);
+  padding: 40px 0;
+  border-top: 1px solid rgba(243, 240, 232, .08);
+}
+.doc-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .85rem;
+}
+.doc-footer a { color: var(--copper-hi); }
+.doc-footer a:hover { color: var(--copper); text-decoration: none; }
+.doc-footer nav { display: flex; gap: 22px; flex-wrap: wrap; }
+
+@media (max-width: 620px) {
+  .doc-hero { padding: 60px 0 50px; }
+  .doc-content { padding: 50px 0 70px; }
+  .doc-meta { gap: 22px; }
+  .doc-toc { padding: 20px 22px; }
+  .doc-footer-inner { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="/" class="brand" aria-label="Lourvix — inicio">
+      <span class="brand-mark">LX</span>
+      <span class="brand-txt">
+        LOURVIX
+        <small>Desbloqueando el Español</small>
+      </span>
+    </a>
+    <a href="/" class="back-link">← Volver al inicio</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="doc-hero">
+    <div class="container doc-hero-inner">
+      <span class="eyebrow">Documento legal · Términos</span>
+      <h1>Términos de Uso</h1>
+      <p>
+        Estos Términos de Uso regulan el acceso y la utilización de la plataforma educativa
+        <strong style="color: var(--copper-hi);">Lourvix · Pronombres en Español</strong>.
+        Al acceder o utilizar el sitio, aceptas plenamente las condiciones descritas a continuación.
+      </p>
+
+      <div class="doc-meta">
+        <div class="doc-meta-item">
+          <strong>Última actualización</strong>
+          <span>15 de enero de 2025</span>
+        </div>
+        <div class="doc-meta-item">
+          <strong>Versión</strong>
+          <span>1.0</span>
+        </div>
+        <div class="doc-meta-item">
+          <strong>Idioma</strong>
+          <span>Español</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="doc-content">
+    <div class="container">
+
+      <nav class="doc-toc" aria-label="Índice">
+        <h3>Índice de contenidos</h3>
+        <ol>
+          <li><a href="#aceptacion">Aceptación de los términos</a></li>
+          <li><a href="#objeto">Objeto de la plataforma</a></li>
+          <li><a href="#acceso">Acceso y disponibilidad</a></li>
+          <li><a href="#uso-permitido">Uso permitido</a></li>
+          <li><a href="#propiedad">Propiedad intelectual</a></li>
+          <li><a href="#contenido">Contenido educativo y pedagógico</a></li>
+          <li><a href="#responsabilidad">Limitación de responsabilidad</a></li>
+          <li><a href="#enlaces">Enlaces a terceros</a></li>
+          <li><a href="#conducta">Conducta del usuario</a></li>
+          <li><a href="#modificaciones">Modificaciones de los términos</a></li>
+          <li><a href="#legislacion">Legislación aplicable y jurisdicción</a></li>
+          <li><a href="#contacto">Cómo contactarnos</a></li>
+        </ol>
+      </nav>
+
+      <section class="doc-section" id="aceptacion">
+        <h2><span class="num">01</span> Aceptación de los términos</h2>
+        <p>
+          Al acceder, navegar o utilizar la plataforma <strong>Lourvix · Pronombres en Español</strong>,
+          disponible en <strong>lourvix-es-pronombres-pv.vercel.app</strong>, declaras haber leído,
+          comprendido y aceptado íntegramente estos Términos de Uso.
+        </p>
+        <p>
+          Si no estás de acuerdo con alguna de las condiciones aquí establecidas, te pedimos
+          <strong>no utilizar la plataforma</strong> y finalizar la sesión inmediatamente.
+        </p>
+      </section>
+
+      <section class="doc-section" id="objeto">
+        <h2><span class="num">02</span> Objeto de la plataforma</h2>
+        <p>
+          Lourvix es una plataforma educativa digital cuyo objetivo es facilitar el aprendizaje
+          interactivo y lúdico del <strong>idioma español</strong> para personas brasileñas y
+          lusohablantes, con enfoque en:
+        </p>
+        <ul>
+          <li>Gramática española aplicada (pronombres, verbos, estructuras).</li>
+          <li>Conversación, comprensión auditiva, lectura y escritura.</li>
+          <li>Contextos reales de la vida cotidiana y del entorno profesional.</li>
+          <li>Metodología basada en memoria activa, inmersión y feedback inmediato.</li>
+        </ul>
+        <p>
+          El contenido es de carácter <strong>estrictamente educativo, informativo y pedagógico</strong>,
+          no constituyendo asesoría profesional, legal, financiera ni de cualquier otra naturaleza.
+        </p>
+      </section>
+
+      <section class="doc-section" id="acceso">
+        <h2><span class="num">03</span> Acceso y disponibilidad</h2>
+        <p>
+          Lourvix se esfuerza por mantener la plataforma accesible de forma continua, pero
+          <strong>no garantiza disponibilidad ininterrumpida</strong>. El acceso puede ser
+          suspendido temporalmente por razones técnicas, actualizaciones, mantenimiento,
+          causas de fuerza mayor o decisiones de nuestros proveedores de infraestructura.
+        </p>
+        <p>
+          Nos reservamos el derecho de modificar, suspender o discontinuar total o parcialmente
+          la plataforma, sin necesidad de aviso previo y sin responsabilidad por daños derivados.
+        </p>
+      </section>
+
+      <section class="doc-section" id="uso-permitido">
+        <h2><span class="num">04</span> Uso permitido</h2>
+        <p>El usuario se compromete a utilizar la plataforma exclusivamente para fines:</p>
+        <ul>
+          <li><strong>Personales y educativos</strong> — aprendizaje propio del español.</li>
+          <li><strong>Profesionales legítimos</strong> — capacitación laboral, desarrollo profesional.</li>
+          <li><strong>Investigación académica</strong> — citando correctamente la fuente.</li>
+        </ul>
+        <p>
+          <strong>Queda expresamente prohibido:</strong>
+        </p>
+        <ul>
+          <li>Utilizar el contenido para fines comerciales sin autorización escrita.</li>
+          <li>Copiar, redistribuir, revender o sublicenciar el material educativo.</li>
+          <li>Realizar ingeniería inversa del código fuente con fines de lucro.</li>
+          <li>Automatizar el acceso mediante bots, scrapers o scripts no autorizados.</li>
+          <li>Introducir virus, malware o cualquier código malicioso.</li>
+          <li>Suplantar la identidad de Lourvix o de terceros.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section" id="propiedad">
+        <h2><span class="num">05</span> Propiedad intelectual</h2>
+        <p>
+          Todo el contenido de la plataforma — incluyendo pero no limitado a: <strong>textos, diseño,
+          código fuente, identidad visual, logotipos, gráficos, ilustraciones, animaciones,
+          metodología pedagógica y estructura didáctica</strong> — es de propiedad exclusiva de
+          <strong>Lourvix · Boutique de Ingeniería Web</strong> o de sus licenciantes, estando
+          protegido por las leyes brasileñas e internacionales de derechos de autor.
+        </p>
+        <p>
+          Se permite el uso personal del contenido educativo, pero <strong>no la reproducción
+          total o parcial sin autorización expresa y por escrito</strong>.
+        </p>
+        <div class="highlight-box">
+          <strong>Marcas registradas:</strong> Lourvix, el monograma LX, la identidad visual
+          cobre/obsidiana y el eslogan "Desbloqueando el Español" son marcas distintivas de Lourvix.
+        </div>
+      </section>
+
+      <section class="doc-section" id="contenido">
+        <h2><span class="num">06</span> Contenido educativo y pedagógico</h2>
+        <p>
+          El contenido educativo de Lourvix ha sido cuidadosamente desarrollado con base en
+          metodologías reconocidas de enseñanza de idiomas, incluyendo:
+        </p>
+        <ul>
+          <li><strong>Memoria activa</strong> — el alumno es protagonista del proceso.</li>
+          <li><strong>Inmersión contextual</strong> — aprendizaje vinculado a la realidad.</li>
+          <li><strong>Feedback inmediato</strong> — corrección en tiempo real.</li>
+          <li><strong>Metodología lúdica</strong> — aprendizaje por descubrimiento.</li>
+        </ul>
+        <p>
+          Aunque nos esforzamos por mantener el contenido preciso y actualizado, <strong>no
+          garantizamos que esté libre de errores</strong>, ni que corresponda exactamente a las
+          variantes regionales del español (México, España, Argentina, etc.).
+        </p>
+      </section>
+
+      <section class="doc-section" id="responsabilidad">
+        <h2><span class="num">07</span> Limitación de responsabilidad</h2>
+        <p>
+          Lourvix <strong>no se responsabiliza</strong> por:
+        </p>
+        <ul>
+          <li>Decisiones personales, profesionales o legales tomadas por el usuario a partir del contenido.</li>
+          <li>Interrupciones técnicas, errores de conexión o fallos de terceros (Vercel, YouTube, WhatsApp).</li>
+          <li>Daños directos o indirectos, lucro cesante o pérdida de datos derivados del uso de la plataforma.</li>
+          <li>Contenido de sitios externos enlazados desde la plataforma.</li>
+          <li>Uso indebido del contenido por parte de terceros sin autorización.</li>
+        </ul>
+        <div class="warning-box">
+          <strong>Nota:</strong> La plataforma es un recurso educativo complementario.
+          No sustituye clases formales, cursos certificados ni procesos de acreditación oficial.
+        </div>
+      </section>
+
+      <section class="doc-section" id="enlaces">
+        <h2><span class="num">08</span> Enlaces a terceros</h2>
+        <p>
+          La plataforma puede contener enlaces a sitios externos (YouTube, WhatsApp, Google Fonts,
+          Vercel). Estos enlaces son ofrecidos únicamente por conveniencia del usuario.
+        </p>
+        <p>
+          Lourvix <strong>no controla, no aprueba y no se responsabiliza</strong> por el contenido,
+          políticas de privacidad, términos de uso o prácticas de sitios de terceros. El acceso a
+          dichos sitios se realiza bajo responsabilidad exclusiva del usuario.
+        </p>
+      </section>
+
+      <section class="doc-section" id="conducta">
+        <h2><span class="num">09</span> Conducta del usuario</h2>
+        <p>Al utilizar la plataforma, el usuario se compromete a:</p>
+        <ul>
+          <li>Mantener una conducta ética, respetuosa y profesional.</li>
+          <li>No reproducir, compartir o distribuir contenido sin autorización.</li>
+          <li>No vulnerar la seguridad, integridad o funcionamiento de la plataforma.</li>
+          <li>Cumplir todas las leyes aplicables en su país de residencia.</li>
+          <li>Respetar los derechos de propiedad intelectual de Lourvix y terceros.</li>
+        </ul>
+        <p>
+          El incumplimiento de estas normas puede resultar en la <strong>suspensión del acceso</strong>
+          y eventuales acciones legales.
+        </p>
+      </section>
+
+      <section class="doc-section" id="modificaciones">
+        <h2><span class="num">10</span> Modificaciones de los términos</h2>
+        <p>
+          Lourvix se reserva el derecho de modificar, actualizar o reemplazar estos Términos de Uso
+          en cualquier momento, sin aviso previo. Las modificaciones entran en vigor inmediatamente
+          tras su publicación en esta página.
+        </p>
+        <p>
+          Es responsabilidad del usuario revisar periódicamente los términos. El uso continuado
+          de la plataforma tras las modificaciones constituye <strong>aceptación tácita</strong>
+          de los nuevos términos.
+        </p>
+      </section>
+
+      <section class="doc-section" id="legislacion">
+        <h2><span class="num">11</span> Legislación aplicable y jurisdicción</h2>
+        <p>
+          Estos Términos de Uso se rigen por las leyes de la <strong>República Federativa de
+          Brasil</strong>, en especial por:
+        </p>
+        <ul>
+          <li><strong>Marco Civil da Internet</strong> — Lei nº 12.965/2014.</li>
+          <li><strong>Lei Geral de Proteção de Dados (LGPD)</strong> — Lei nº 13.709/2018.</li>
+          <li><strong>Código de Defesa do Consumidor</strong> — Lei nº 8.078/1990, cuando aplique.</li>
+          <li><strong>Lei de Direitos Autorais</strong> — Lei nº 9.610/1998.</li>
+        </ul>
+        <p>
+          Cualquier controversia derivada del uso de la plataforma será resuelta preferencialmente
+          mediante <strong>diálogo directo y buena fe</strong> entre las partes. En caso de
+          litigio, queda elegido el foro de la comarca de <strong>Natal / RN</strong>, Brasil,
+          con exclusión de cualquier otro, por más privilegiado que sea.
+        </p>
+      </section>
+
+      <section class="doc-section" id="contacto">
+        <h2><span class="num">12</span> Cómo contactarnos</h2>
+        <p>
+          Para cualquier duda, aclaración, solicitud o notificación relacionada con estos
+          Términos de Uso, contáctanos:
+        </p>
+        <div class="highlight-box">
+          <strong>📱 WhatsApp:</strong> <a href="https://wa.me/5584991920773" target="_blank" rel="noopener">+55 (84) 99192-0773</a><br>
+          <strong>🌎 Plataforma:</strong> <a href="https://lourvix-es-pronombres-pv.vercel.app">lourvix-es-pronombres-pv.vercel.app</a><br>
+          <strong>⏱️ Plazo de respuesta:</strong> hasta 15 días hábiles
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="doc-footer">
+  <div class="container doc-footer-inner">
+    <p>© <span id="year"></span> Lourvix · Todos los derechos reservados.</p>
+    <nav aria-label="Documentos legales">
+      <a href="/politica-privacidade.html">Política de Protección de Datos</a>
+      <a href="/termos-uso.html">Términos de Uso</a>
+      <a href="https://wa.me/5584991920773" target="_blank" rel="noopener">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
